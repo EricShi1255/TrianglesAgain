@@ -15,6 +15,10 @@ public class PointTester {
         System.out.println("Perimeter {0.1,0.1,-1.9,0.1,-0.9,-1.632051} --> 6... | " + banecat.getPerimeter());
         System.out.println("Area {0.1,0.1,-1.9,0.1,-0.9,-1.632051} --> 1.7321 | " + banecat.getArea());
         System.out.println("Classify {0.1,0.1,-1.9,0.1,-0.9,-1.632051} --> equilateral| " + banecat.classify() ); // equilateral 
+        System.out.println(banecat.toString());
+        Point d = new Point(5,5);
+        banecat.setVertex(0, d);
+        System.out.println(banecat.toString());
     }
     
 }
