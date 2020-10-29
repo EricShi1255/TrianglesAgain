@@ -18,4 +18,14 @@ public class Point  {
         return y;
     }  
 
+    public double distanceTo(Point other){
+        //The distanceTo method returns the Euclidean distance from this point to the other point. Please DO NOT round. 
+        double x2 = other.x;
+        double y2 = other.y;
+        double distance = Math.sqrt((x2-x)*(x2-x)+(y2-y)*(y2-y));
+	    distance = Math.round(distance * 10000);
+	    distance = distance / 10000;
+	    return(distance);
+    }
+
 }
