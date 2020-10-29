@@ -9,7 +9,12 @@ public class PointTester {
         
         System.out.println("(0,3) & (4,0) --> false | " + a.equals(b));
         System.out.println("(0,3) & (0,3) --> true | " + a.equals(a1));
-        Sytem.out.println();
+        System.out.println();
+
+        Triangle banecat = new Triangle(0.1,0.1,-1.9,0.1,-0.9,-1.632051);
+        System.out.println("Perimeter {0.1,0.1,-1.9,0.1,-0.9,-1.632051} --> 6... | " + banecat.getPerimeter());
+        System.out.println("Area {0.1,0.1,-1.9,0.1,-0.9,-1.632051} --> 1.7321 | " + banecat.getArea());
+        System.out.println("Classify {0.1,0.1,-1.9,0.1,-0.9,-1.632051} --> equilateral| " + banecat.classify() ); // equilateral 
     }
     
 }
