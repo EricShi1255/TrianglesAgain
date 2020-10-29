@@ -28,4 +28,8 @@ public class Point  {
 	    return(distance);
     }
 
+    public boolean equals(Point other) {
+        return (x == other.x) && (y == other.y);
+    }
+
 }
